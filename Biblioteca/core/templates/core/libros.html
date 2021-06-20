@@ -80,10 +80,13 @@
                         <td>{{li.autorLibro}}</td>
                         <td>{{li.descripcion}}</td>
                         <td>{{li.categoria}}</td>
+                        <td><a href="{% url 'mod_libro' li.idISBN %}">Modificar</a></td>
+                        <td><a href="{% url 'del_libro' li.idISBN %}">Eliminar</a></td>
                     </tr>
                     {% endfor %}
                     </tbody>
                 </table>
+                <button class="btn btn-dark"><a href="{% url 'form_libro' %}">Añadir Libro</a></button>
             </div>
         </div>
     </div>

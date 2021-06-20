@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>Añadir Libro</title>
+    <title>Modificar Libro</title>
 </head>
 {% load static %}
 
@@ -57,13 +57,13 @@
     </div>
 
     <div class="row text-center my-5">
-        <form method="POST" action="" id="addlibro">
+        <form method="POST" action="" id="modlibro">
             {% csrf_token %}
             <div class="form-group">
             {{ form.as_table  }}
             </div>
             <div class="mt-5">
-                <input type="submit" class="btn btn-success" id="crear" value="CREAR">
+                <input type="submit" class="btn btn-info" id="modificar" value="MODIFICAR">
             </div>
         </form>
         <div class="alert alert-success mt-3" id="confirmacion">
