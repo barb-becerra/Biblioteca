@@ -27,6 +27,7 @@ def form_libro(request):
             datos['mensaje'] = "Libro Agregado"
 
     return render(request, 'core/addlibro.html', datos)
+    redirect(to="libros")
 
 def form_mod_libro(request, id):
     libro = Libro.objects.get(idISBN=id)

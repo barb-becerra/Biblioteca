@@ -42,17 +42,15 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
     <!--INDEX (COLORES, TITULOS, IMAGENES, ETC)-->
     <div class="container mt-5">
         <div class="text-center">
-            <img src="{% static 'core/img/klipartz.com.png '%}" width="80" height="80" alt="...">
+            <a href="{% url 'inicio' %}">
+                <img src="{% static 'core/img/klipartz.com.png '%}"  width="80" height="80" alt="...">
+            </a>
         </div>
     </div>
 
@@ -97,8 +95,8 @@
 
     <!--PIE DE PAGINA-->
     <footer class="bg-light text-center text-light bg-dark fixed-bottom">
-        <div class="text-center p-3 mt-4 footer">
-            <p>Biblioteca Mavatile</p><br>
+        <div class="text-center footer">
+            <p>Biblioteca Mavatile</p>
             Los libros que buscas para disfrutar de la lectura!<br>
             <p>Numero de contacto: +56945687238</p>
         </div>
