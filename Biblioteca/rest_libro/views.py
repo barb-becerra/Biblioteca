@@ -25,7 +25,7 @@ def lista_libros(request):
 @api_view(['GET','PUT', 'DELETE'])
 def detalle_libro(request, id):
     try:
-        libro = Libro.objects.GET(idISBN=id)
+        libro = Libro.objects.get(idISBN=id)
     except Libro.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
     if request.method== 'GET':
